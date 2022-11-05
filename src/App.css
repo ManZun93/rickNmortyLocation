@@ -2,17 +2,21 @@
   max-height: fit-content;
   text-align: center;
   margin: auto;
- 
+  
  
   
 }
 
 body {
-  background-color: #242424;
+  background-image: linear-gradient(to left bottom, #151516, #121314, #0e1112, 
+  #090f0f, #050c0a, #050c09, #060c09, #060c08, #0a0f0d, #0e1211, #121414, #151616);
   color: white;
   font-family: 'Albert Sans', sans-serif;
   
+
 }
+
+
 
 header {
   height: 35vh;
@@ -31,9 +35,10 @@ header {
   font-size: xx-large;
   color: #c1fdaa;
   text-shadow: 
-  0 0 5px rgb(0, 0, 0), 0 0 10px rgb(32, 48, 41), 0 0 15px #FFF, 0 0 20px #49ff18, 
-  0 0 30px #49FF18, 0 0 40px #39c712, 0 0 55px #49FF18, 
-  0 0 75px #49ff18, 2px 2px 11px rgba(38,17,10,0.28);
+    0 0 5px rgb(0, 0, 0), 0 0 10px rgb(32, 48, 41), 0 0 15px #FFF, 
+    0 0 20px #49ff18, 
+    0 0 30px #49FF18, 0 0 40px #39c712, 0 0 55px #49FF18, 
+    0 0 75px #49ff18, 2px 2px 11px rgba(38,17,10,0.28);
 }
 
 .input-search{
@@ -53,7 +58,7 @@ input {
   width: 30%;
   border-radius:10px;
   background-color: #60e73b ;
-  box-shadow: 0px 0px 18px 6px rgba(24,175,34,0.7);;
+  box-shadow: 0px 0px 18px 6px rgba(24,175,34,0.7);
   font-family: 'Creepster', cursive;
   font-size: x-large;
   color: rgb(63, 61, 61)
@@ -100,6 +105,7 @@ button:hover {
   gap: 20px;
   font-size: large;
  
+ 
 }
 
 .underline {
@@ -119,6 +125,8 @@ ul {
   grid-column-gap: 12px;
   grid-row-gap: 12px;
   
+ 
+  
 }
 
 @media (max-width: 600px) {
@@ -137,7 +145,7 @@ ul {
 li{
   border-radius: 20px;
   padding: 5%;
-  background: #222121;
+  background: #112523;
   box-shadow: 0px 0px 20px 2px rgba(24,175,34,0.7);
   
 }
@@ -145,7 +153,7 @@ li{
 li:hover{
   cursor: pointer;
   box-shadow: 0px 0px 20px 2px rgba(0, 240, 16, 0.7);
-  background: #111111;
+  background: #060e0d;
   
 }
 
@@ -160,6 +168,8 @@ li:hover{
 }
 
 footer{
-  background: #111111 ;
+  background-image: 
+    linear-gradient(to right top, #060f0e, #050d0d, #050c0b, #040a0a, #040808, 
+    #040707, #030606, #030505, #030505, #030505, #020505, #020505);
   padding: 20px;
 }
