@@ -111,13 +111,13 @@ button:hover {
 
 ul {
   width: 95%;
-  margin: 3% auto;
+  margin: 50px auto;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 12px;
-  grid-row-gap: 0.3%;
+  grid-row-gap: 12px;
   
 }
 
