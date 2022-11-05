@@ -85,7 +85,8 @@ function App() {
 
 
       <footer>
-        By Manuel Lufan
+        <h5>Made with 🤍 in Academlo</h5>
+        <h5>By © Manuel Lufan</h5>
       </footer>
 
     </div>

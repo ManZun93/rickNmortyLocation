@@ -159,3 +159,7 @@ li:hover{
   position: relative;
 }
 
+footer{
+  background: #111111 ;
+  padding: 20px;
+}
