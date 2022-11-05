@@ -44,7 +44,7 @@ function App() {
           value={typeId}
           placeholder = "Type a location id (1 to 126)" 
           onChange = {e => setTypeId(e.target.value) }/>
-        <button onClick={searchId} onKeyDown= {searchId}>Search</button>
+        <button onClick={searchId} onKeyDown= {searchId}>Search ID</button>
         
       </div>
 
