@@ -115,22 +115,22 @@ button:hover {
  
 }
 
-ul {
+.resident-card {
   width: 95%;
   margin: 50px auto;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 12px;
-  grid-row-gap: 12px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
   
  
   
 }
 
 @media (max-width: 600px) {
-  ul {
+  .resident-card {
     width: 90%;
     margin: auto;
     display: flex;
@@ -142,7 +142,7 @@ ul {
 }
 
 
-li{
+.resident-card-item{
   border-radius: 20px;
   padding: 5%;
   background: #112523;
@@ -150,7 +150,7 @@ li{
   
 }
 
-li:hover{
+.resident-card-item:hover{
   cursor: pointer;
   box-shadow: 0px 0px 20px 2px rgba(0, 240, 16, 0.7);
   background: #060e0d;
@@ -172,4 +172,86 @@ footer{
     linear-gradient(to right top, #060f0e, #050d0d, #050c0b, #040a0a, #040808, 
     #040707, #030606, #030505, #030505, #030505, #020505, #020505);
   padding: 20px;
+}
+
+.page-buttons {
+  height: 150px;
+  display: flex;
+  position: relative;
+}
+
+.pagination-button1 {
+  position: absolute;
+  left: 30%;
+}
+
+.pagination-button2 {
+  position: absolute;
+  right: 30%;
+}
+
+.pagination-list {
+  width: fit-content;
+  padding: 20px;
+  margin: 25px auto;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  background: #060e0d;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 2px rgba(0, 240, 16, 0.7);
+ 
+}
+
+@media (max-width: 600px) {
+  .pagination-list {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+   
+  }
+}
+
+
+
+.pagination-link {
+  padding: 10px;
+  border-radius: 50px;
+  background: #060e0d;
+
+}
+.number-page {
+  cursor: pointer;
+ 
+  
+}
+
+.number-page:hover {
+  box-shadow: 0px 0px 20px 2px rgba(0, 240, 16, 0.7);
+  border-radius: 50px;
+  
+
+}
+
+
+
+
+.is-current {
+  
+  color:  #d8f8cf;
+  box-shadow: 0px 0px 20px 2px rgba(0, 240, 16, 0.7);
+}
+
+
+
+
+
+
+
+.is-disabled {
+  display: none;
 }

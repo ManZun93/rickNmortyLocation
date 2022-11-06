@@ -12,7 +12,7 @@ useEffect (()=> {
   .then (res => setCharacter(res.data))
 },[])
 
-console.log(character)
+
 
 
 
@@ -21,8 +21,8 @@ console.log(character)
 
 
   return (
-    <ul>
-      <li >
+    <ul className='resident-card'>
+      <li className='resident-card-item'>
 
         <h3>{character.name} </h3> <br />
         <img className='card-image' src={character?.image} alt="" /> 

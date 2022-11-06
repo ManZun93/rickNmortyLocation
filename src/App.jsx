@@ -4,10 +4,18 @@ import './App.css'
 import { useEffect } from 'react'
 import axios from 'axios'
 import ResidentInfo from './components/ResidentInfo'
+import Pagination from './components/Pagination'
 
 function App() {
-  const [rickNmorty, setRickNmorty] = useState({})
+  const [rickNmorty, setRickNmorty] = useState([])
   const [typeId, setTypeId] = useState("")
+
+  
+  const [charactersPerPage, SetcharactersPerPage] = useState(12);
+  const [currentPage, SetCurrentPage] = useState (1)
+
+  const lastIndex =  currentPage * charactersPerPage
+  const firstIndex =  lastIndex - charactersPerPage
 
   useEffect (()=> {
     const randomId = Math.floor(Math.random( )* 126) + 1
@@ -16,7 +24,7 @@ function App() {
 
   }, [])
 
- 
+
 
   const searchId = () => {
     axios.get(`https://rickandmortyapi.com/api/location/${typeId}`)
@@ -28,8 +36,9 @@ function App() {
   }
 
 
+  
+
     
- 
 
   return (
     <div className="App">
@@ -73,15 +82,24 @@ function App() {
       </div>
 
       
-      <ul>
+      <ul className='resident-card'>
         {rickNmorty.residents?.map(residentUrl => (
           <ResidentInfo 
             url = {residentUrl}
             key = {residentUrl}
           />)
-        )}
+        ).slice(firstIndex, lastIndex)}
       </ul>
       
+      
+     <Pagination  
+        charactersPerPage = {charactersPerPage} 
+        currentPage = {currentPage}
+        SetCurrentPage = {SetCurrentPage}
+        totalCharacters = {rickNmorty.residents?.length}
+
+    />
+
 
 
       <footer>
