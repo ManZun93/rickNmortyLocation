@@ -176,9 +176,17 @@ footer{
 
 .page-buttons {
   height: 150px;
-  display: flex;
   position: relative;
+  
 }
+
+@media (max-width: 600px) {
+  .page-buttons{
+    
+width:  95%;
+  }
+}
+
 
 .pagination-button1 {
   position: absolute;
@@ -189,6 +197,23 @@ footer{
   position: absolute;
   right: 30%;
 }
+
+
+@media (max-width: 600px) {
+  .pagination-button1{
+    
+left: 0;
+
+  }
+}
+
+@media (max-width: 600px) {
+  .pagination-button2{
+    
+right: 0;
+  }
+}
+
 
 .pagination-list {
   width: fit-content;
@@ -209,10 +234,7 @@ footer{
   .pagination-list {
     width: 50%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
-    
-   
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
