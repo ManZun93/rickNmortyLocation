@@ -28,8 +28,12 @@ const Pagination = ({charactersPerPage, currentPage,  SetCurrentPage, totalChara
       aria-label="pagination">
       
     <div className='page-buttons'>
-      <button className={`pagination-button1 ${currentPage === 1 ? 'is-disabled' : "" }`} onClick={OnPreviusPage}>Previous Characters {" "} </button>
-      <button className={`pagination-button2 ${currentPage >= pageNumbers.length ? 'is-disabled' : ""}`} onClick={OnNextPage}>Next Characters</button>
+      <button className={`pagination-button1 ${currentPage === 1 ? 'is-disabled' : "" }`} onClick={OnPreviusPage}> 
+          <i class="fa-solid fa-angle-left">{" "}</i> Previous Characters {" "}
+      </button>
+      <button className={`pagination-button2 ${currentPage >= pageNumbers.length ? 'is-disabled' : ""}`} onClick={OnNextPage}>
+        Next Characters  <i class="fa-solid fa-angle-right">{" "}</i> 
+      </button>
     </div>
 
 
