@@ -167,12 +167,6 @@ button:hover {
   position: relative;
 }
 
-footer{
-  background-image: 
-    linear-gradient(to right top, #060f0e, #050d0d, #050c0b, #040a0a, #040808, 
-    #040707, #030606, #030505, #030505, #030505, #020505, #020505);
-  padding: 20px;
-}
 
 .page-buttons {
   height: 150px;
@@ -183,7 +177,7 @@ footer{
 @media (max-width: 600px) {
   .page-buttons{
     
-width:  95%;
+width:  85%;
   }
 }
 
@@ -235,6 +229,7 @@ right: 0;
     width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
+    
   }
 }
 
@@ -260,8 +255,6 @@ right: 0;
 }
 
 
-
-
 .is-current {
   
   color:  #d8f8cf;
@@ -269,11 +262,13 @@ right: 0;
 }
 
 
-
-
-
-
-
 .is-disabled {
   display: none;
+}
+
+footer{
+  background-image: 
+    linear-gradient(to right top, #060f0e, #050d0d, #050c0b, #040a0a, #040808, 
+    #040707, #030606, #030505, #030505, #030505, #020505, #020505);
+  padding: 20px;
 }
