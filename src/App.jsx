@@ -77,9 +77,10 @@ function App() {
           Residents Quantity : {rickNmorty.residents?.length}
         </h3>
 
-        <div className='underline'></div>
+       
 
       </div>
+      <div className='underline'></div>
 
       
       <ul className='resident-card'>

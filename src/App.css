@@ -4,7 +4,6 @@
   margin: auto;
   max-width: 1920px;
   
- 
   
 }
 
@@ -112,6 +111,8 @@ button:hover {
 
 .underline {
   width: 50%;
+  margin: 0 auto 40px auto;
+  padding: 0;
   border: 1px solid white;
   box-shadow: 0px 0px 18px 6px rgba(24,175,34,0.7);
  
@@ -119,16 +120,15 @@ button:hover {
 
 .resident-card {
   width: 80%;
-  margin: 35px auto;
+  
+  margin: 0 auto;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
-  grid-column-gap: 20px;
- 
- 
-
-  padding: 0;
+  grid-column-gap: 4%;
+  place-items: center;
+  justify-content: center;
+  padding: 50px 0 50px 0;
 
   
 
@@ -149,6 +149,7 @@ button:hover {
 
 
 .resident-card-item{
+  margin: 0 auto;
   border-radius: 20px;
   padding: 5%;
   background: #112523;
@@ -173,6 +174,7 @@ button:hover {
 
 
 .page-buttons {
+  padding-top: 20px;
   height: 150px;
   position: relative;
   
