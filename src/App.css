@@ -230,7 +230,7 @@ right: 0;
 
 @media (max-width: 600px) {
   .pagination-list {
-    width: 60%;
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
     
