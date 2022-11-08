@@ -11,7 +11,7 @@ function App() {
   const [typeId, setTypeId] = useState("")
 
   
-  const [charactersPerPage, SetcharactersPerPage] = useState(15);
+  const [charactersPerPage, SetcharactersPerPage] = useState(12);
   const [currentPage, SetCurrentPage] = useState (1)
 
   const lastIndex =  currentPage * charactersPerPage
