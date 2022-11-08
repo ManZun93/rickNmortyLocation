@@ -1,7 +1,8 @@
 * {
-  max-height: fit-content;
+ 
   text-align: center;
   margin: auto;
+  max-width: 1920px;
   
  
   
@@ -117,14 +118,18 @@ button:hover {
 }
 
 .resident-card {
-  width: 95%;
+  width: 80%;
   margin: 35px auto;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-column-gap: 20px;
+ 
+ 
+
+  padding: 0;
+
   
 
   
